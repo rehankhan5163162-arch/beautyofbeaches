@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms Of Services - BeautyOfBeaches</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Footerpages.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo">BeautyOfBeaches</div>
+
+        <nav class="nav">
+            <a href="./index.html">Home</a>
+            <a href="./zone.html">Zone</a>
+            <a href="./gallery.html">Gallery</a>
+            <a href="./about us.html">About</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./booking.html">Booking</a>
+        </nav>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+    </header>
+
+    <div class="page-banner">
+        <h1 style="color: white; font-size: 3em; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Terms Of Services</h1>
+    </div>
+
+    <section class="page-content">
+        <div class="terms-section">
+            <p>Last Updated: December 2025</p>
+
+            <h2>1. Acceptance of Terms</h2>
+            <p>By accessing and using this website, you accept and agree to be bound by the terms and provision of this
+                agreement. In addition, when using this websites particular services, you shall be subject to any posted
+                guidelines or rules applicable to such services.</p>
+
+            <h2>2. Use of Site</h2>
+            <p>You agree to use the site for lawful purposes only and in a way that does not infringe the rights of,
+                restrict or inhibit anyone else's use and enjoyment of the site. Prohibited behavior includes harassing
+                or causing distress or inconvenience to any other user, transmitting obscene or offensive content or
+                disrupting the normal flow of dialogue within our site.</p>
+
+            <h2>3. Intellectual Property</h2>
+            <p>The content, layout, design, data, databases and graphics on this website are protected by intellectual
+                property laws. You may not copy, reproduce, republish, download, post, broadcast, transmit, make
+                available to the public, or otherwise use our content in any way except for your own personal,
+                non-commercial use.</p>
+
+            <h2>4. Booking Terms</h2>
+            <p>All bookings made through our site are subject to the specific terms and conditions of the service
+                provider (airline, hotel, tour operator, etc.). We act only as an agent for these providers.</p>
+
+            <h2>5. Limitation of Liability</h2>
+            <p>BeautyOfBeaches will not be liable for any damages, including indirect or consequential damages, or any
+                damages arising from use or loss of use, data, or profits, whether in action of contract, negligence or
+                other tortious action, arising out of or in connection with the use of the site.</p>
+
+            <h2>6. Changes to Terms</h2>
+            <p>We reserve the right to change these terms at any time by posting changes online. Your continued use of
+                this site after changes are posted constitutes your acceptance of this agreement as modified.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER  -->
+    <footer class="footer-section">
+        <div class="footer-items">
+            <div class="sec-1">
+                <h3 class="footer-heading">BeautyOfBeaches</h3>
+                <p>Built to showcase stunning beaches and helpful travel details.
+                    Join us on our social platforms and never miss an update.</p>
+                <div class="icons">
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.github.com"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="sec-2">
+                <h3 class="footer-heading">Quick Links</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                    <li><a href="./about us.html">About Us</a></li>
+                    <li><a href="./booking.html">Booking</a></li>
+                </ul>
+            </div>
+            <div class="sec-3">
+                <h3 class="footer-heading">Our Services</h3>
+                <ul>
+                    <li><a href="./beach-guides.html">Beach Guides</a></li>
+                    <li><a href="./travel-tips.html">Travel Tips</a></li>
+                    <li><a href="./index.html#cardes">Destination Finder</a></li>
+                    <li><a href="./booking.html#hotel-loc">Resort Listings</a></li>
+                </ul>
+            </div>
+            <form class="sec-4">
+                <h3 class="footer-heading">Stay Updated</h3>
+                <p>Subscribe to our newsletter for the latest Travel news</p>
+                <input type="email" placeholder="Enter your Email" required>
+                <button type="submit">Subscribe<i class="fa-regular fa-bell"
+                        style="margin-left: 8px; color:#1d3557 ; font-size: 20px; font-weight: bolde;"></i></button>
+            </form>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 BeautyOfBeaches | All rights Reserved</p>
+            <div class="copy-links">
+                <a href="./privacy-policy.html">Privacy Policy</a>
+                <a href="./terms-of-services.html">Terms Of Services</a>
+                <a onclick="showfeedback()">Feedback</a>
+                <a onclick="showQuery()">Queries</a>
+            </div>
+        </div>
+    </footer>
+    <form class="feedback" id="Feedbackform" onsubmit="review()">
+        <i class="fa-solid fa-xmark xmark" onclick="footerform()"></i>
+        <h2>We value Your Openion</h2>
+        <p>Help us improve your experience by sharing your feedback.</p>
+        <label for="Name">Name</label>
+        <input type="text" required>
+        <label for="Email">Email</label>
+        <input type="email" name="" id="" required>
+        <label for="">Catogery</label>
+        <select name="" id="" required>
+            <option value="" selected>Report a Bug</option>
+            <option value="">Content Quality</option>
+            <option value="">General Website</option>
+            <option value="">Costumer Survice</option>
+        </select>
+        <label for="">Ratings</label>
+        <select name="" id="" required>
+            <option value="" selected>Excellent</option>
+            <option value="">Average</option>
+            <option value="">Poor</option>
+            <option value="">Good</option>
+        </select>
+        <label for="">Share your experiance</label>
+        <textarea name="" id="" placeholder="Type Here.." required></textarea>
+        <button type="submit">Submit Feedback</button>
+    </form>
+    <form class="feedback query" id="Query-form" onsubmit="review()">
+        <i class="fa-solid fa-xmark xmark" onclick="footerform()"></i>
+        <h2>Ask Us Anything, anytime</h2>
+        <p>Have a question about a destination or tour? Send us a message!</p>
+        <label for="Name">Name</label>
+        <input type="text" required>
+        <label for="Email">Email</label>
+        <input type="email" name="" id="" required>
+        <label for="">Subject</label>
+        <select name="" id="" required>
+            <option value="" selected>Tour Details</option>
+            <option value="">Booking issue</option>
+            <option value="">Partnership</option>
+            <option value="">Other</option>
+        </select>
+        <label for="">Question</label>
+        <textarea name="" id="" placeholder="Type Your Querie here.." required></textarea>
+        <button type="submit">Submit Query</button>
+    </form>
+    <div class="overlayhome" id="bluroverlay" onclick="removefeedbackform()"></div>
+    <script src="https://kit.fontawesome.com/3dd7c864df.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

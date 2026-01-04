@@ -1,0 +1,235 @@
+/* # ABOUT US  */
+.about-banner {
+    background-image: url(./Assets/about\ us.jpg);
+    font-size: larger;
+    line-height: 1.8;
+}
+
+.about-banner h1 {
+    color: black;
+    font-size: 49px;
+}
+
+.about-container {
+    width: 100%;
+    height: 60vh;
+    /* background-color: #02ad0b; */
+    margin-top: 20vh;
+    margin-bottom: 18vh;
+    display: flex;
+    animation: aboutcontainer 1s ease forwards;
+}
+
+@keyframes aboutcontainer {
+    from {
+        opacity: 0;
+        transform: translateY(-33px);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.about-cont-text {
+    width: 50%;
+    height: 100%;
+    margin-left: 4vw;
+    box-shadow: 20px 0 35px -8px rgba(0, 0, 0, 0.6);
+    position: relative;
+    background-color: #a3caca;
+    text-align: center;
+    padding-top: 4vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    line-height: 2;
+}
+
+.about-cont-text .fa-globe {
+    font-size: 33px;
+    margin-right: 18px;
+    color: #0c8151;
+}
+
+.about-cont-text .about-icons i {
+    margin-top: 4vh;
+    font-size: large;
+    margin-left: 1.4vw;
+    background-color: #05161646;
+    padding: 10px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.about-cont-text .about-icons a {
+    text-decoration: none;
+    color: black;
+}
+
+.about-cont-text .about-icons i:hover {
+    color: #0c8151;
+    transform: translateY(-4px);
+}
+
+.about-cont-text h2 {
+    font-size: 33px;
+    display: inline;
+}
+
+.about-cont-text p {
+    line-height: 1.3;
+    letter-spacing: 1.5px;
+    font-size: large;
+}
+
+.about-cont-img {
+    width: 50%;
+    height: 100%;
+    /* background-color: #a5550a; */
+    padding: 5vh 5vw 5vh 0;
+}
+
+.a-r-img {
+    height: 100%;
+    width: 100%;
+    background-color: #078167;
+    background-image: url(./Assets/about\ card.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.about-mission {
+    height: 60vh;
+    margin-bottom: 10vh;
+    text-align: center;
+    padding: 5.5vh 5vw 7vh 5vw;
+    color: rgb(228, 216, 216);
+    margin-left: 12vw;
+    margin-right: 12vw;
+    border-bottom: solid 1px gray;
+    border-top: solid 1px gray;
+}
+
+.about-mission h1 {
+    font-size: 41px;
+    margin-bottom: 4vh;
+    color: #0dcaa1;
+}
+
+.about-mission p {
+    font-size: larger;
+    line-height: 1.3;
+}
+
+.our-team {
+    width: 100%;
+    height: 50vh;
+    margin-top: 15vh;
+}
+
+.round-img {
+    width: 100%;
+    height: 77%;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.img-name {
+    width: 100%;
+    height: 24%;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.round-imges {
+    width: 20%;
+    height: 38vh;
+    border-radius: 50%;
+}
+
+.img-text-name {
+    width: 20%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(207, 203, 203);
+    line-height: 1.3;
+}
+
+.i-t-n-1 {
+    background-image: url(./Assets/Male\ Professional\ Headshot\ -\ Northern\ European\ in\ a\ blazer\ with\ open-collar\ shirt\ -\ premium\ portr___.jfif);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.i-t-n-2 {
+    background-image: url(./Assets/Nailed\ it_.jfif);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.i-t-n-3 {
+    background-image: url(./Assets/bus.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.our-team h1 {
+    text-align: center;
+    color: rgb(206, 203, 198);
+    margin-bottom: 8vh;
+    font-size: 40px;
+}
+
+.about-margin {
+    margin-top: 30vh;
+}
+
+/* MOBILE OVERRIDES (ONLY APPLIED ON SMALL SCREENS) */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column !important;
+        height: auto !important;
+        margin-top: 10vh !important;
+        margin-bottom: 5vh !important;
+    }
+
+    .about-cont-img {
+        display: none !important;
+        /* Hide image card on mobile */
+    }
+
+    .about-cont-text {
+        width: 90% !important;
+        margin: 0 auto !important;
+        height: auto !important;
+        padding: 40px 20px !important;
+        border-radius: 20px !important;
+    }
+
+    .about-mission {
+        height: auto !important;
+        margin: 5vh auto !important;
+        padding: 40px 20px !important;
+        width: 90% !important;
+    }
+
+    .our-team {
+        display: none !important;
+        /* Hide team section on mobile */
+    }
+
+    .desktop-only {
+        display: none !important;
+    }
+}

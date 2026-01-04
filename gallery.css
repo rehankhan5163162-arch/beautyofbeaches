@@ -1,0 +1,262 @@
+/* GALLERY  */
+.gallery-text {
+    width: 100%;
+    height: 30vh;
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.gallery-section {
+    width: 100%;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 180px;
+    gap: 18px;
+    margin: 0 0 20vh 0;
+}
+
+.gallery-text h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 45px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    animation: content 1s ease forwards;
+}
+@keyframes content {
+    from{
+        opacity:0;
+        transform: translateY(33px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.gallery-text p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    letter-spacing: 6px;
+    word-spacing: 2px;
+    margin-top: 7px;
+    animation: content 1s ease forwards;
+}
+@keyframes content {
+    from{
+        opacity:0;
+        transform: translateY(33px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.gallery-box {
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 13px;
+}
+
+.b1 {
+    grid-column: span 2;
+    background-color: peru;
+    grid-row: span 2;
+    background-image: url(./Assets/14\ Cheap\ Travel\ Destinations\ With\ Kids\ in\ the\ US.jpg);
+    background-size: 140%;
+}
+
+.b2 {
+    background-color: #02ad83;
+    background-image: url(./Assets/_Punta\ Cana\ Unveiled!_.jpg);
+    background-size: 164%;
+}
+
+.b3 {
+    background-color: rebeccapurple;
+    background-image: url(./Assets/cannon-beach.jpg);
+    background-size: 170%;
+}
+
+.b4 {
+    background-color: brown;
+    grid-column: span 2;
+    background-image: url(./Assets/colony.jpg);
+    background-size: 100%;
+}
+
+.b5 {
+    background-color: #0c9797;
+    grid-column: span 2;
+    background-image: url(./Assets/capoba.jpg);
+    background-size: 100%;
+}
+
+.b6 {
+    background-color: tan;
+    grid-row: span 2;
+    background-image: url(./Assets/download\ \(14\).jpg);
+    background-size: 100%;
+}
+
+.b7 {
+    background-color: #0c9797;
+    background-image: url(./Assets/download\ \(11\).jpg);
+    background-size: 163%;
+}
+
+.b8 {
+    background-color: blue;
+    background-image: url(./Assets/download\ \(21\).jpg);
+    background-size: 160%;
+}
+
+.b9 {
+    background-color: #02ad83;
+    grid-column: span 3;
+    background-image: url(./Assets/latofo.jpg);
+    background-size: 100%;
+}
+
+.b10 {
+    background-color: #02ad83;
+    background-image: url(./Assets/download\ \(20\).jpg);
+    background-size: 164%;
+}
+
+.b11 {
+    background-color: blueviolet;
+    grid-column: span 2;
+    grid-row: span 2;
+    background-image: url(./Assets/download\ \(28\).jpg);
+    background-size: 162%;
+}
+
+.b12 {
+    background-color: #02ad83;
+    background-image: url(./Assets/img-1.jpg);
+    background-size: cover;
+}
+
+.b13 {
+    background-color: #078167;
+    background-image: url(./Assets/Gentle\ waves\ wash\ over\ sandy\ shore\ by\ Beautiful\ things\ on\ @creativemarket.jpg);
+    background-size: 164%;
+}
+
+.b14 {
+    background-color: blue;
+    grid-column: span 2;
+    grid-row: span 2;
+    background-image: url(./Assets/india.jpg);
+    background-size: 110%;
+}
+
+.b15 {
+    background-color: olive;
+    grid-column: span 2;
+    background-image: url(./Assets/Railay\ Beach\ in\ Thailand.jpg);
+    background-size: 100%;
+}
+
+.b16 {
+    background-color: #078167;
+    grid-row: span 2;
+    background-image: url(./Assets/high\ enough\ to\ see\ the\ sea.jpg);
+    background-size: 143%;
+}
+
+.b17 {
+    background-color: #02ad83;
+    grid-column: span 2;
+    background-image: url(./Assets/Vacation\ Ready_\ Find\ Perfect\ Swimwear\ for\ Every\ Destination.jpg);
+    background-size: 100%;
+}
+
+.b18 {
+    background-color: chartreuse;
+    background-image: url(./Assets/Why\ Tropical\ Vacations\ Are\ Always\ a\ Good\ Idea.jpg);
+    background-size: 162%;
+}
+
+.b19 {
+    background-color: rgb(187, 46, 192);
+    background-image: url(./Assets/telum.jpg);
+    background-size: 140%;
+}
+
+.b20 {
+    background-color: #02ad0b;
+    grid-row: span 2;
+    background-image: url(./Assets/nusa.jpg);
+    background-size: 167%;
+}
+
+.b21 {
+    background-color: #f08e0e;
+    background-image: url(./Assets/img.jpg);
+    background-size: 100%;
+}
+
+.b22 {
+    background-color: #756969;
+    background-image: url(./Assets/latofo.jpg);
+}
+
+.b23 {
+    background-color: #8b0edf;
+    grid-column: span 2;
+    background-image: url(./Assets/download\ \(17\).jpg);
+    background-size: 100%;
+}
+
+.b24 {
+    background-color: #02ad0b;
+    background-image: url(./Assets/Cape\ Hillsborough\ Magic\ -\ Golden\ Hour\ in\ Queensland_\ Dreamlike\ Escape.jpg);
+    background-size: 164%;
+}
+
+.b25 {
+    background-color: #078d7b;
+    grid-column: span 2;
+    grid-row: span 2;
+    background-image: url(./Assets/photo-1504829857797-ddff29c27927.avif);
+    background-size: 160%;
+}
+
+.b26 {
+    background-color: #a2ad02;
+    background-image: url(./Assets/Download\ Beautiful\ Ocean\ Boating\ Photography\ Wallpaper\ Background\ 8K\ -\ Dejavu\ Wallpaper.jpg);
+
+}
+
+.b27 {
+    background-color: #b16eb1;
+    grid-column: span 2;
+    background-image: url(./Assets/durness_beach_sutherland.jpg);
+    background-size: 150%;
+}
+
+.b28 {
+    background-color: #e68e0b;
+    background-image: url(./Assets/Tropical\ Destinations.jpg);
+    background-size: 160%;
+}
+
+.b29 {
+    background-color: #02ad0b;
+    grid-column: span 2;
+    background-image: url(./Assets/download\ \(30\).jpg);
+    background-size: 100%;
+}
+
+.b30 {
+    background-color: #02ad0b;
+    background-image: url(./Assets/download\ \(6\).jpg);
+}

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="booking.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo">BeautyOfBeaches</div>
+
+        <nav class="nav">
+            <a href="./index.html">Home</a>
+            <a href="./zone.html">Zone</a>
+            <a href="./gallery.html">Gallery</a>
+            <a href="./about us.html">About</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./booking.html">Booking</a>
+        </nav>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+    </header>
+    <div class="booking-banner">
+        <h1>Your Journey Begins Here</h1>
+        <p>Plan your trip with ease and confidence.</p>
+    </div>
+    <form class="booking-dash" id="bookinForm">
+        <div class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" id="searchInput" placeholder="Where you want to go" required autocomplete="off">
+        </div>
+        <div class="location">
+            <i class="fa-solid fa-calendar"></i>
+            <input type="date" id="dateInput" required class="date">
+        </div>
+        <div class="location">
+            <i class="fa-solid fa-user"></i>
+            <select name="" id="travelersInput" required>
+                <option value="" style="color: gray;" selected disabled>Travelers</option>
+                <option value="1 Traveler">1 Traveler</option>
+                <option value="2 Travelers">2 Travelers</option>
+                <option value="3 Travelers">3 Travelers</option>
+                <option value="4+ Travelers">4+ Travelers</option>
+            </select>
+        </div>
+        <button class="search" id="searchBtn" type="button">Search</button>
+    </form>
+    <div class="add">
+        <p><i class="fa-solid fa-fire"></i>&nbsp;&nbsp;Exclusive offers</p>
+        <h3>Get 20% OFF on Summer Beach Packages</h3>
+        <a href="#hotel-loc"><button class="details">View Details</button></a>
+    </div>
+    <div class="flight" id="flight-loc">
+        <div class="flight-text opacity animate-on-scroll downword">
+            <h1><i class="fa-solid fa-plane"></i>&nbsp;Best Flight Deals</h1>
+            <p>Fly to your favorite beaches with top airlines.</p>
+        </div>
+        <div class="flight-cards">
+            <div class="sub-cards opacity animate-on-scroll leftcoming">
+                <div class="fligh-img"></div>
+                <div class="price">
+                    <h2>OceanAir</h2>
+                    <p>&dollar;120</p>
+                </div>
+                <h3 class="flight-1">NYC <i class="fa-solid fa-arrow-right"></i> Miami </h3>
+                <p class="flight-time"><i class="fa-solid fa-clock"></i> 3hrs 20min &nbsp;&nbsp;&nbsp; <i
+                        class="fa-solid fa-bag-shopping"></i> 1 bag</p>
+                <button class="book-flight" onclick="openForm1()">Book Flight</button>
+            </div>
+            <div class="sub-cards opacity animate-on-scroll upword">
+                <div class="fligh-img f-2"></div>
+                <div class="price">
+                    <h2>SunFly</h2>
+                    <p>&dollar; 95</p>
+                </div>
+                <h3 class="flight-1">LAX <i class="fa-solid fa-arrow-right"></i> Honolulu </h3>
+                <p class="flight-time"><i class="fa-solid fa-clock"></i> 3hrs 20min &nbsp;&nbsp;&nbsp; <i
+                        class="fa-solid fa-bag-shopping"></i> Carry on</p>
+                <button class="book-flight" onclick="openform2()">Book Flight</button>
+            </div>
+            <div class="sub-cards opacity animate-on-scroll rightcoming">
+                <div class="fligh-img f-3"></div>
+                <div class="price">
+                    <h2>BlueSky</h2>
+                    <p>&dollar;150</p>
+                </div>
+                <h3 class="flight-1">London <i class="fa-solid fa-arrow-right"></i> Maldives </h3>
+                <p class="flight-time"><i class="fa-solid fa-clock"></i> 3hrs 20min &nbsp;&nbsp;&nbsp; <i
+                        class="fa-solid fa-utensils"></i> Meal</p>
+                <button class="book-flight" onclick="openform3()">Book Flight</button>
+            </div>
+        </div>
+    </div>
+    <div class="flight bus">
+        <div class="flight-text opacity animate-on-scroll leftcoming">
+            <h1><i class="fa-solid fa-bus"></i></i>&nbsp;Comfertable Bus Rides</h1>
+            <p>Scenic routes to the coast with premium comfort.</p>
+        </div>
+        <div class="flight-cards">
+            <div class="sub-cards no-2 opacity animate-on-scroll upword">
+                <div class="fligh-img  bus-img1"></div>
+                <div class="price">
+                    <h2>Coastal Express</h2>
+                    <p>&dollar; 40</p>
+                </div>
+                <h3 class="flight-1">City Center <i class="fa-solid fa-arrow-right"></i> North Beach</h3>
+                <p class="flight-time"><i class="fa-solid fa-snowflake"></i> AC &nbsp;&nbsp; <i
+                        class="fa-solid fa-wifi"></i> WiFi &nbsp;&nbsp;<i class="fa-solid fa-chair"></i> Seater</p>
+                <button class="book-flight bus-flight" onclick="showbusform1()">Book Now</button>
+            </div>
+            <div class="sub-cards no-2 opacity animate-on-scroll downword">
+                <div class="fligh-img  bus-img2"></div>
+                <div class="price">
+                    <h2>Night Rider</h2>
+                    <p>&dollar; 60</p>
+                </div>
+                <h3 class="flight-1">Down Town <i class="fa-solid fa-arrow-right"></i> Sunset Bay</h3>
+                <p class="flight-time"><i class="fa-solid fa-snowflake"></i> AC &nbsp;&nbsp; <i
+                        class="fa-solid fa-bed"></i> Sleeper &nbsp;&nbsp;<i class="fa-solid fa-charging-station"></i>
+                    Plug</p>
+                <button class="book-flight bus-flight" onclick="showbusform2()">Book Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="blur  opacity animate-on-scroll downword">
+        <div class="blur-img opacity animate-on-scroll upword">
+            <h1 class=" opacity animate-on-scroll leftcoming">Luxury Resorts Waiting For You</h1>
+            <p class=" opacity animate-on-scroll rightcoming">Experience world-class hospitality at unbeatable prices.
+            </p>
+            <a href="#hotel-loc"><button class="resort opacity animate-on-scroll leftcoming">Explore
+                    Resorts</button></a>
+        </div>
+    </div>
+
+    <div class="resort-cards" id="hotel-loc">
+        <div class="resort-text opacity animate-on-scroll downword">
+            <h1><i class="fa-solid fa-hotel"></i> Luxury Beach Resorts</h1>
+        </div>
+        <div class="resort-sub-cards">
+            <div class="hotel opacity animate-on-scroll downword">
+                <div class="h-img-1 "></div>
+                <div class="hotel-items">
+                    <h2>Azure Bay Resort</h2>
+                    <p><i class="fa-solid fa-location-dot"></i>&nbsp; Maldives</p>
+                    <p>Private villas over crystal clear waters with direct ocean access.</p>
+                    <div class="hotel-icons">
+                        <i class="fa-solid fa-water-ladder"></i><i class="fa-solid fa-wifi"></i><i
+                            class="fa-solid fa-utensils"></i><i class="fa-solid fa-champagne-glasses"></i>
+                    </div>
+                    <h2 class="rate">&dollar;250<div class="night">/night</div>
+                    </h2>
+                </div>
+                <button class="book-resort"
+                    onclick="alert('We’re sorry, all resorts are fully booked at the moment')">Book Resort</button>
+            </div>
+            <div class="hotel opacity animate-on-scroll upword">
+                <div class="h-img-1 resort2"></div>
+                <div class="hotel-items">
+                    <h2>Palm Grove Hotel</h2>
+                    <p><i class="fa-solid fa-location-dot"></i>&nbsp; Bali, Indonesia</p>
+                    <p>Tropical gardens, infinity pool, and just steps away from the beach.</p>
+                    <div class="hotel-icons">
+                        <i class="fa-solid fa-water-ladder"></i><i class="fa-solid fa-wifi"></i><i
+                            class="fa-solid fa-utensils"></i>
+                    </div>
+                    <h2 class="rate">&dollar;180<div class="night">/night</div>
+                    </h2>
+                </div>
+                <button class="book-resort"
+                    onclick="alert('We’re sorry, all resorts are fully booked at the moment')">Book Resort</button>
+            </div>
+            <div class="hotel opacity animate-on-scroll downword">
+                <div class="h-img-1 resort3"></div>
+                <div class="hotel-items">
+                    <h2>The Royal Sands</h2>
+                    <p><i class="fa-solid fa-location-dot"></i>&nbsp;Cancun, Mexico</p>
+                    <p>All-inclusive luxury with private beach access and gourmet dining.</p>
+                    <div class="hotel-icons">
+                        <i class="fa-solid fa-water-ladder"></i><i class="fa-solid fa-wifi"></i><i
+                            class="fa-solid fa-utensils"></i><i class="fa-solid fa-dumbbell"></i>
+                    </div>
+                    <h2 class="rate">&dollar;320<div class="night">/night</div>
+                    </h2>
+                </div>
+                <button class="book-resort"
+                    onclick="alert('We’re sorry, all resorts are fully booked at the moment')">Book Resort</button>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER  -->
+    <footer class="footer-section">
+        <div class="footer-items">
+            <div class="sec-1">
+                <h3 class="footer-heading">BeautyOfBeaches</h3>
+                <p>Built to showcase stunning beaches and helpful travel details.
+                    Join us on our social platforms and never miss an update.</p>
+                <div class="icons">
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.github.com"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="sec-2">
+                <h3 class="footer-heading">Quick Links</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                    <li><a href="./about us.html">About Us</a></li>
+                    <li><a href="./booking.html">Booking</a></li>
+                </ul>
+            </div>
+            <div class="sec-3">
+                <h3 class="footer-heading">Our Services</h3>
+                <ul>
+                    <li><a href="./beach-guides.html">Beach Guides</a></li>
+                    <li><a href="./travel-tips.html">Travel Tips</a></li>
+                    <li><a href="./index.html#cardes">Destination Finder</a></li>
+                    <li><a href="./booking.html#hotel-loc">Resort Listings</a></li>
+                </ul>
+            </div>
+            <form class="sec-4">
+                <h3 class="footer-heading">Stay Updated</h3>
+                <p>Subscribe to our newsletter for the latest Travel news</p>
+                <input type="email" placeholder="Enter your Email" required>
+                <button type="submit">Subscribe<i class="fa-regular fa-bell"
+                        style="margin-left: 8px; color:#1d3557 ; font-size: 20px; font-weight: bolde;"></i></button>
+            </form>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 BeautyOfBeaches | All rights Reserved</p>
+            <div class="copy-links">
+                <a href="./privacy-policy.html">Privacy Policy</a>
+                <a href="./terms-of-services.html">Terms Of Services</a>
+                <a onclick="showfeedback()">Feedback</a>
+                <a onclick="showQuery()">Queries</a>
+            </div>
+        </div>
+    </footer>
+    <form class="feedback" id="Feedbackform" onsubmit="review()">
+        <i class="fa-solid fa-xmark xmark" onclick="footerform()"></i>
+        <h2>We value Your Openion</h2>
+        <p>Help us improve your experience by sharing your feedback.</p>
+        <label for="Name">Name</label>
+        <input type="text" required>
+        <label for="Email">Email</label>
+        <input type="email" name="" id="" required>
+        <label for="">Catogery</label>
+        <select name="" id="" required>
+            <option value="" selected>Report a Bug</option>
+            <option value="">Content Quality</option>
+            <option value="">General Website</option>
+            <option value="">Costumer Survice</option>
+        </select>
+        <label for="">Ratings</label>
+        <select name="" id="" required>
+            <option value="" selected>Excellent</option>
+            <option value="">Average</option>
+            <option value="">Poor</option>
+            <option value="">Good</option>
+        </select>
+        <label for="">Share your experiance</label>
+        <textarea name="" id="" placeholder="Type Here.." required></textarea>
+        <button type="submit">Submit Feedback</button>
+    </form>
+    <form class="feedback query" id="Query-form" onsubmit="review()">
+        <i class="fa-solid fa-xmark xmark" onclick="footerform()"></i>
+        <h2>Ask Us Anything, anytime</h2>
+        <p>Have a question about a destination or tour? Send us a message!</p>
+        <label for="Name">Name</label>
+        <input type="text" required>
+        <label for="Email">Email</label>
+        <input type="email" name="" id="" required>
+        <label for="">Subject</label>
+        <select name="" id="" required>
+            <option value="" selected>Tour Details</option>
+            <option value="">Booking issue</option>
+            <option value="">Partnership</option>
+            <option value="">Other</option>
+        </select>
+        <label for="">Question</label>
+        <textarea name="" id="" placeholder="Type Your Querie here.." required></textarea>
+        <button type="submit">Submit Query</button>
+    </form>
+    <div class="overlayhome" id="bluroverlay" onclick="removefeedbackform()"></div>
+
+
+    <form action="" class="booking-form" id="Booking-way-form" onsubmit="showalert()">
+        <div class="cross">
+            <h1> Book Flight </h1>
+            <i class="fa-solid fa-xmark" onclick="closeForm()"></i>
+        </div>
+        <p>You are booking: <b style="color: black;">OceanAir - NYC to Miami.</b> Please enter your details below.</p>
+        <label for="Name" class="booking-label">Name</label>
+        <input type="text" class="booking-Name" required>
+        <label for="Name" class="booking-label">E-mail</label>
+        <input type="email" class="booking-Name" required>
+        <label for="Name" class="booking-label">Phone Number</label>
+        <input type="tel" class="booking-Name" required placeholder="+92 1234 56789">
+        <label for="Name" class="booking-label">Travel Date</label>
+        <input type="date" class="booking-Name" required>
+        <button class="booking-btn" type="submit">Confirm Booking</button>
+    </form>
+    <form action="" class="booking-form" id="Booking-way-form2" onsubmit="showalert()">
+        <div class="cross">
+            <h1> Book Flight </h1>
+            <i class="fa-solid fa-xmark" onclick="closeForm2()"></i>
+        </div>
+        <p>You are booking: <b style="color: black;">SunFly - LAX to Honolulu.</b> Please enter your details below.</p>
+        <label for="Name" class="booking-label">Name</label>
+        <input type="text" class="booking-Name" required>
+        <label for="Name" class="booking-label">E-mail</label>
+        <input type="email" class="booking-Name" required>
+        <label for="Name" class="booking-label">Phone Number</label>
+        <input type="tel" class="booking-Name" required placeholder="+92 1234 56789">
+        <label for="Name" class="booking-label">Travel Date</label>
+        <input type="date" class="booking-Name" required>
+        <button class="booking-btn" type="submit">Confirm Booking</button>
+    </form>
+    <form action="" class="booking-form" id="Booking-way-form3" onsubmit="showalert()">
+        <div class="cross">
+            <h1> Book Flight </h1>
+            <i class="fa-solid fa-xmark" onclick="closeForm3()"></i>
+        </div>
+        <p>You are booking: <b style="color: black;">BlueSkies - London to Maldives.</b> Please enter your details
+            below.</p>
+        <label for="Name" class="booking-label">Name</label>
+        <input type="text" class="booking-Name" required>
+        <label for="Name" class="booking-label">E-mail</label>
+        <input type="email" class="booking-Name" required>
+        <label for="Name" class="booking-label">Phone Number</label>
+        <input type="tel" class="booking-Name" required placeholder="+92 1234 56789">
+        <label for="Name" class="booking-label">Travel Date</label>
+        <input type="date" class="booking-Name" required>
+        <button class="booking-btn" type="submit">Confirm Booking</button>
+    </form>
+    <form action="" class="booking-form" id="Booking-bus-form1" onsubmit="showbusalert()">
+        <div class="cross">
+            <h1> Book Bus </h1>
+            <i class="fa-solid fa-xmark" onclick="closeForm4()"></i>
+        </div>
+        <p>You are <b style="color: black;"> Coastal Express - City to North Beach.</b> Please enter your details below.
+        </p>
+        <label for="Name" class="booking-label">Name</label>
+        <input type="text" class="booking-Name" required>
+        <label for="Name" class="booking-label">E-mail</label>
+        <input type="email" class="booking-Name" required>
+        <label for="Name" class="booking-label">Phone Number</label>
+        <input type="tel" class="booking-Name" required placeholder="+92 1234 56789">
+        <label for="Name" class="booking-label">Travel Date</label>
+        <input type="date" class="booking-Name" required>
+        <button class="booking-btn" type="submit">Confirm Booking</button>
+    </form>
+    <form action="" class="booking-form" id="Booking-bus-form2" onsubmit="showbusalert()">
+        <div class="cross">
+            <h1> Book Bus </h1>
+            <i class="fa-solid fa-xmark" onclick="closeForm5()"></i>
+        </div>
+        <p>You are booking: <b style="color: black;">Night Rider - Downtown to Sunset Bay.</b> Please enter your details
+            below.</p>
+        <label for="Name" class="booking-label">Name</label>
+        <input type="text" class="booking-Name" required>
+        <label for="Name" class="booking-label">E-mail</label>
+        <input type="email" class="booking-Name" required>
+        <label for="Name" class="booking-label">Phone Number</label>
+        <input type="tel" class="booking-Name" required placeholder="+92 1234 56789">
+        <label for="Name" class="booking-label">Travel Date</label>
+        <input type="date" class="booking-Name" required>
+        <button class="booking-btn" type="submit">Confirm Booking</button>
+    </form>
+
+    <div class="overlay" id="black-overlay" onclick="removeform()"></div>
+    <script src="https://kit.fontawesome.com/3dd7c864df.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

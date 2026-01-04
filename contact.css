@@ -1,0 +1,184 @@
+/* CONTACT US  */
+.contact-banner {
+    background-image: url(./Assets/reck.jpg);
+    letter-spacing: 4px;
+    font-size: larger;
+}
+
+.contact-banner p {
+    letter-spacing: 6px;
+    margin-top: 9px;
+}
+
+.main-contact {
+    width: 100%;
+    height: 150vh;
+    display: flex;
+}
+
+.get-in-touch {
+    width: 45%;
+    height: 100%;
+    color: white;
+    line-height: 2;
+    letter-spacing: 3px;
+    padding-top: 13vh;
+    padding-left: 10vw;
+    animation: Getintouch 1s ease forwards;
+}
+
+@keyframes Getintouch {
+    from {
+        opacity: 0;
+        transform: translateX(-33px);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.send-a-message {
+    /* background-color: rgb(126, 86, 163); */
+    width: 55%;
+    height: 100%;
+    color: white;
+    letter-spacing: 3px;
+    padding-top: 13vh;
+    padding-left: 7vw;
+    animation: sendmessage 1s ease forwards;
+}
+
+@keyframes sendmessage {
+    from {
+        opacity: 0;
+        transform: translateY(-33px);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.get-in-touch h1 {
+    font-size: 35px;
+}
+
+.get-in-touch h3 {
+    display: inline;
+    margin-left: 5px;
+}
+
+.get-in-touch p {
+    margin-left: 3.8vw;
+    color: rgb(218, 206, 206);
+}
+
+.get-in-touch i {
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.329);
+    padding: 10px;
+    border-radius: 50%;
+    color: #051616;
+    transition: 0.3s;
+}
+
+.get-in-touch i:hover {
+    background-color: #165c5c;
+    color: rgb(72, 177, 142);
+}
+
+.get-in-items {
+    margin-top: 6vh;
+}
+
+.mail {
+    margin-top: 4vh;
+}
+
+form {
+    margin-top: 10vh;
+}
+
+input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: solid 1px gray;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    /* Default to full width of container */
+    padding: 9px;
+    transition: 0.3s;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.name {
+    width: 48%;
+    /* Split width with email */
+    margin-right: 2%;
+}
+
+.E-mail {
+    width: 48%;
+}
+
+.subject {
+    width: 98%;
+    margin-top: 5vh;
+}
+
+textarea {
+    background-color: transparent;
+    width: 98%;
+    margin-top: 5vh;
+    color: white;
+    font-size: 20px;
+    height: 30vh;
+    border: 0;
+    border-bottom: solid 1px gray;
+    padding: 7px;
+    transition: 0.3s;
+}
+
+textarea:focus {
+    outline: solid 1px gray;
+    background-color: #0a2929;
+}
+
+input:focus {
+    outline: solid 1px gray;
+    background-color: #0a2929;
+}
+
+.send-a-message form .Send {
+    margin-top: 5vh;
+    padding: 12px 24px;
+    font-size: larger;
+    color: rgb(180, 173, 173);
+    background-color: transparent;
+    border: solid 2px gray;
+    border-radius: 26px;
+    transition: transform 0.3s ease;
+}
+
+.send-a-message form .Send:hover {
+    transform: translateY(-4px);
+    border-color: white;
+    color: white;
+}
+
+.map {
+    height: 50vh;
+    width: 100%;
+    background-color: aqua;
+    margin-top: 15vh;
+    border-radius: 14px;
+}
