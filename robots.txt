@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap:
-https://rehankhan5163162-arch.github.io/beautyofbeaches/sitemap.xml
